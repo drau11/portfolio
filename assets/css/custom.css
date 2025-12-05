@@ -31,7 +31,7 @@ body {
   margin-bottom: 0.2rem !important;
 }
 
-/* --- TECH STACK BADGES --- */
+/* --- TECH STACK BADGES CONTAINER --- */
 .tech-stack-container {
   display: flex;
   gap: 12px;
@@ -61,7 +61,7 @@ body {
 }
 
 .cert-card:before {
-  content: "🏆";
+  content: "🏆"; /* Trophy icon */
   margin-right: 10px;
   font-size: 1.1rem;
 }
@@ -76,7 +76,7 @@ body {
 /* --- WORK HIGHLIGHT BOXES --- */
 .highlight-box {
   background: linear-gradient(145deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%);
-  border-left: 3px solid #3b82f6; /* Accent Bar */
+  border-left: 3px solid #3b82f6; /* Blue Accent Bar */
   padding: 15px 20px;
   margin-bottom: 15px;
   border-radius: 0 8px 8px 0;
