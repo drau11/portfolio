@@ -1,25 +1,74 @@
 baseURL: "https://ranadevesh.au/"
 languageCode: "en-au"
-title: "Devesh Rana | Cybersecurity Engineer"
+title: "Devesh Rana"
 theme: "blowfish"
 
-# Technical Optimizations
 enableRobotsTXT: true
 build:
   writeStats: true
 
-# The "Look"
+# 1. TOP NAVIGATION
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 10
+    - identifier: projects
+      name: Operations
+      url: /projects/
+      weight: 20
+    - identifier: resume
+      name: Resume
+      url: /resume.pdf # We can upload this file later
+      weight: 30
+
 params:
-  colorScheme: "blowfish" # Dark mode default
-  defaultBackgroundImage: "background.svg" # You can change this later
+  colorScheme: "blowfish" # Dark mode native
+  defaultBackgroundImage: "background.svg" # Standard tech background
+  enableSearch: true # Adds the Command+K search menu (Very Pro)
+
+  # 2. THE "HERO" SECTION (Homepage)
   home:
     profile:
       enable: true
       name: "Devesh Rana"
-      headline: "Cybersecurity Engineer based in Sydney"
-      description: "Specializing in Penetration Testing, Cloud Security, and ASM."
+      image: "avatar.jpg" # Make sure to add your photo!
+      imageCircle: true
+      
+      # THE TYPING ANIMATION (Hacker Style)
+      typeit: true 
+      headline: "Cybersecurity Engineer based in Sydney" 
+      
+      description: "Specializing in Offensive Security, Cloud Architecture, and ASM."
+      
       links:
         - icon: "github"
-          url: "https://github.com/your-username"
+          url: "https://github.com/drau11"
         - icon: "linkedin"
-          url: "https://linkedin.com/in/your-profile"
+          url: "https://linkedin.com/in/your-linkedin-url"
+        - icon: "email"
+          url: "mailto:contact@ranadevesh.au"
+
+  # 3. TECHNICAL SKILLS BADGES (This looks great visually)
+  widgets:
+    homepage:
+      - type: "custom"
+        title: "Tech Stack"
+        content: |
+           <div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
+             <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black">
+             <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
+             <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white">
+             <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white">
+             <img src="https://img.shields.io/badge/Kali-557C94?style=for-the-badge&logo=kalilinux&logoColor=white">
+           </div>
+
+  footer:
+    showCopyright: true
+    showTheme: false
+
+# Advanced Performance Settings
+minify:
+  disableXML: true
+  minifyOutput: true
