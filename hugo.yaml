@@ -4,71 +4,134 @@ title: "Devesh Rana"
 theme: "blowfish"
 
 enableRobotsTXT: true
+
 build:
   writeStats: true
 
-# 1. TOP NAVIGATION
+# ----------------------------
+# NAVIGATION MENU
+# ----------------------------
 menu:
   main:
     - identifier: about
-      name: About
-      url: /about/
+      name: "About"
+      url: "/about/"
       weight: 10
-    - identifier: projects
-      name: Operations
-      url: /projects/
+
+    - identifier: experience
+      name: "Experience"
+      url: "/experience/"
       weight: 20
-    - identifier: resume
-      name: Resume
-      url: /resume.pdf # We can upload this file later
+
+    - identifier: certifications
+      name: "Certifications"
+      url: "/certifications/"
       weight: 30
 
-params:
-  colorScheme: "blowfish" # Dark mode native
-  defaultBackgroundImage: "background.svg" # Standard tech background
-  enableSearch: true # Adds the Command+K search menu (Very Pro)
+    - identifier: projects
+      name: "Projects"
+      url: "/projects/"
+      weight: 40
 
-  # 2. THE "HERO" SECTION (Homepage)
+    - identifier: resume
+      name: "Resume"
+      url: "/resume.pdf"
+      weight: 50
+
+# ----------------------------
+# SITE PARAMETERS
+# ----------------------------
+params:
+  colorScheme: "blowfish"
+  defaultBackgroundImage: "background.svg"
+  
+  enableSearch: true
+  enableCodeCopy: true
+  enableBreadcrumbs: true
+  showDateUpdated: true
+
+  description: "Cybersecurity Engineer | Cloud, Application Security, AWS | Based in Sydney"
+  images:
+    - "me.jpg"
+
+  customCSS:
+    - "css/custom.css"
+
+  # ----------------------------
+  # HERO SECTION (HOME PROFILE)
+  # ----------------------------
   home:
     profile:
       enable: true
       name: "Devesh Rana"
-      image: "avatar.jpg" # Make sure to add your photo!
+      tagline: "Cybersecurity Engineer | Sydney, Australia"
+      image: "me.jpg"
+      imageWidth: 200
+      imageHeight: 200
       imageCircle: true
-      
-      # THE TYPING ANIMATION (Hacker Style)
-      typeit: true 
-      headline: "Cybersecurity Engineer based in Sydney" 
-      
-      description: "Specializing in Offensive Security, Cloud Architecture, and ASM."
-      
-      links:
-        - icon: "github"
-          url: "https://github.com/drau11"
-        - icon: "linkedin"
-          url: "https://linkedin.com/in/your-linkedin-url"
-        - icon: "email"
-          url: "mailto:contact@ranadevesh.au"
+      typeit: true
+      headline: "Securing Cloud, Applications & Data"
+      description: "Cloud Security · Application Security · Vulnerability Management · Automation"
 
-  # 3. TECHNICAL SKILLS BADGES (This looks great visually)
+      buttons:
+        - title: "Resume"
+          url: "/resume.pdf"
+          icon: "file"
+
+        - title: "LinkedIn"
+          url: "https://au.linkedin.com/in/devesh-rana11"
+          icon: "linkedin"
+
+        - title: "GitHub"
+          url: "https://github.com/drau11"
+          icon: "github"
+
+  # ----------------------------
+  # HOME WIDGETS
+  # ----------------------------
   widgets:
     homepage:
       - type: "custom"
-        title: "Tech Stack"
+        title: "About Me"
         content: |
-           <div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
-             <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black">
-             <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
-             <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white">
-             <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white">
-             <img src="https://img.shields.io/badge/Kali-557C94?style=for-the-badge&logo=kalilinux&logoColor=white">
-           </div>
+          I'm a Cyber Security Engineer at Domain, passionate about securing cloud-native environments, uplifting engineering teams, 
+          and embedding security deeply into the SDLC. I specialise in vulnerability management (CVM), cloud security, runtime security, 
+          application security, and data security uplift initiatives across large-scale distributed systems.
 
-  footer:
-    showCopyright: true
-    showTheme: false
+      - type: "custom"
+        title: "Certifications"
+        content: |
+          <div class="cert-grid">
+            <div>AWS Certified Security – Specialty (SCS)</div>
+            <div>AWS Solutions Architect – Associate (SAA)</div>
+            <div>Akamai Web Application & API Protection</div>
+            <div>Wiz Certified Cloud Fundamentals</div>
+            <div>Microsoft Azure Fundamentals</div>
+            <div>CompTIA Security+</div>
+            <div>ISC2 Certified in Cybersecurity (CC)</div>
+          </div>
 
-# Advanced Performance Settings
-minify:
-  disableXML: true
-  minifyOutput: true
+      - type: "custom"
+        title: "Technical Skills"
+        content: |
+          <div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
+            <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black">
+            <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white">
+            <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white">
+            <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white">
+            <img src="https://img.shields.io/badge/Wiz-6420AA?style=for-the-badge&logo=wiz&logoColor=white">
+            <img src="https://img.shields.io/badge/Acunetix-EF2D56?style=for-the-badge&logo=acunetix&logoColor=white">
+            <img src="https://img.shields.io/badge/AssetNote-0D1117?style=for-the-badge&logoColor=white">
+          </div>
+
+      - type: "custom"
+        title: "Highlighted Work"
+        content: |
+          **● Vulnerability Reduction & CVM Optimization**  
+          Reduced Critical Wiz issues by ~67%, integrated AssetNote & Acunetix into CVM, and improved dashboard accuracy.
+
+          **● Data Security Uplift (DSPM)**  
+          Completed full data discovery & validation, reviewed all High/Critical findings, and published detailed DSPM metrics.
+
+          **● DAST Uplift & Acunetix Onboarding**  
+          Onboarded all 11/11 stagin
