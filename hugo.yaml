@@ -1,0 +1,25 @@
+baseURL: "https://ranadevesh.au/"
+languageCode: "en-au"
+title: "Devesh Rana | Cybersecurity Engineer"
+theme: "blowfish"
+
+# Technical Optimizations
+enableRobotsTXT: true
+build:
+  writeStats: true
+
+# The "Look"
+params:
+  colorScheme: "blowfish" # Dark mode default
+  defaultBackgroundImage: "background.svg" # You can change this later
+  home:
+    profile:
+      enable: true
+      name: "Devesh Rana"
+      headline: "Cybersecurity Engineer based in Sydney"
+      description: "Specializing in Penetration Testing, Cloud Security, and ASM."
+      links:
+        - icon: "github"
+          url: "https://github.com/your-username"
+        - icon: "linkedin"
+          url: "https://linkedin.com/in/your-profile"
