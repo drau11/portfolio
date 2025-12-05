@@ -3,8 +3,6 @@
 
 :root {
   --primary-glow: rgba(59, 130, 246, 0.5); /* Cyber Blue Glow */
-  --card-bg: rgba(255, 255, 255, 0.05);
-  --card-border: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -31,72 +29,5 @@ body {
   margin-bottom: 0.2rem !important;
 }
 
-/* --- TECH STACK BADGES CONTAINER --- */
-.tech-stack-container {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 10px 0;
-}
-
-/* --- CERTIFICATION CARDS --- */
-.cert-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 15px;
-  margin-top: 10px;
-}
-
-.cert-card {
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
-  padding: 15px 20px;
-  border-radius: 8px;
-  font-size: 0.95rem;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  transition: all 0.2s ease-in-out;
-}
-
-.cert-card:before {
-  content: "🏆"; /* Trophy icon */
-  margin-right: 10px;
-  font-size: 1.1rem;
-}
-
-.cert-card:hover {
-  background: rgba(255, 255, 255, 0.1);
-  transform: translateY(-3px);
-  border-color: #3b82f6;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-}
-
-/* --- WORK HIGHLIGHT BOXES --- */
-.highlight-box {
-  background: linear-gradient(145deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%);
-  border-left: 3px solid #3b82f6; /* Blue Accent Bar */
-  padding: 15px 20px;
-  margin-bottom: 15px;
-  border-radius: 0 8px 8px 0;
-}
-
-.highlight-box h4 {
-  margin: 0 0 5px 0 !important;
-  font-size: 1.1rem;
-  color: #e2e8f0;
-}
-
-.highlight-box p {
-  margin: 0 !important;
-  font-size: 0.95rem;
-  color: #94a3b8;
-}
-
-/* --- MOBILE OPTIMIZATION --- */
-@media (max-width: 600px) {
-  .cert-grid {
-    grid-template-columns: 1fr;
-  }
-}
+/* The rest of the CSS is for widgets we temporarily removed, 
+   but we leave the file structured for future use. */

@@ -5,7 +5,7 @@ theme = "blowfish"
 enableRobotsTXT = true
 
 # -------------------------------------------------------------------------
-# NAVIGATION MENU
+# NAVIGATION MENU (The one you designed)
 # -------------------------------------------------------------------------
 [menu]
   [[menu.main]]
@@ -51,6 +51,8 @@ enableRobotsTXT = true
   tagline = "Cybersecurity Engineer | Sydney, Australia"
   image = "avatar.jpg"
   imageCircle = true
+  
+  # TYPING ANIMATION (The Advanced Feature)
   typeit = true
   headline = "Securing Cloud, Applications & Data"
   description = "Cloud Security · Vulnerability Management · DevSecOps · Automation"
@@ -67,69 +69,7 @@ enableRobotsTXT = true
   url = "/resume.pdf"
   
 # -------------------------------------------------------------------------
-# HOME WIDGETS (Content Below Profile)
-# -------------------------------------------------------------------------
-[params.widgets]
-  [[params.widgets.homepage]]
-    type = "custom"
-    title = "About Me"
-    content = """
-      <div class="bio-text">
-        I'm a <strong>Cyber Security Engineer at Domain</strong>, passionate about securing cloud-native environments and embedding security into the SDLC. 
-        I specialise in <strong>Vulnerability Management (CVM)</strong>, Cloud Security (<strong>AWS/Wiz</strong>), and uplifting data security across large-scale distributed systems.
-      </div>
-    """
-
-  [[params.widgets.homepage]]
-    type = "custom"
-    title = "Technical Arsenal"
-    content = """
-      <div class="tech-stack-container">
-        <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black">
-        <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
-        <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white">
-        <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white">
-        <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white">
-        <img src="https://img.shields.io/badge/Wiz-6420AA?style=for-the-badge&logo=wiz&logoColor=white">
-        <img src="https://img.shields.io/badge/Acunetix-EF2D56?style=for-the-badge&logo=acunetix&logoColor=white">
-        <img src="https://img.shields.io/badge/AssetNote-0D1117?style=for-the-badge&logoColor=white">
-      </div>
-    """
-
-  [[params.widgets.homepage]]
-    type = "custom"
-    title = "Certifications"
-    content = """
-      <div class="cert-grid">
-        <div class="cert-card">AWS Certified Security – Specialty</div>
-        <div class="cert-card">AWS Solutions Architect – Associate</div>
-        <div class="cert-card">Akamai Web App & API Protection</div>
-        <div class="cert-card">Wiz Cloud Fundamentals</div>
-        <div class="cert-card">CompTIA Security+</div>
-        <div class="cert-card">ISC2 Certified in Cybersecurity</div>
-      </div>
-    """
-
-  [[params.widgets.homepage]]
-    type = "custom"
-    title = "Impact Highlights"
-    content = """
-      <div class="highlight-box">
-        <h4>🛡️ Vulnerability Reduction & CVM Optimization</h4>
-        <p>Reduced Critical Wiz issues by <strong>67%</strong>, integrated AssetNote & Acunetix into CVM pipelines.</p>
-      </div>
-      <div class="highlight-box">
-        <h4>🔐 Data Security Uplift (DSPM)</h4>
-        <p>Completed full data discovery & validation, remediated high-risk findings, and published detailed DSPM metrics.</p>
-      </div>
-      <div class="highlight-box">
-        <h4>🚀 DAST Uplift & Onboarding</h4>
-        <p>Successfully onboarded all 11 staging environments to Acunetix for automated scanning and reporting.</p>
-      </div>
-    """
-
-# -------------------------------------------------------------------------
-# FOOTER & BUILD
+# FOOTER & BUILD (NO WIDGETS SECTION)
 # -------------------------------------------------------------------------
 [params.footer]
   showCopyright = true
