@@ -65,7 +65,7 @@ params:
       enable: true
       name: "Devesh Rana"
       tagline: "Cybersecurity Engineer | Sydney, Australia"
-      image: "me.jpg"
+      image: "avatar.jpg"
       imageWidth: 200
       imageHeight: 200
       imageCircle: true
