@@ -1,42 +1,102 @@
-/* Premium typography */
+/* IMPORT MODERN FONT */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+:root {
+  --primary-glow: rgba(59, 130, 246, 0.5); /* Cyber Blue Glow */
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --card-border: rgba(255, 255, 255, 0.1);
+}
+
 body {
-    font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif;
-    line-height: 1.7;
-  }
-  
-  /* Hero improvements */
-  .home-profile-name {
-    font-size: 2.8rem !important;
-    font-weight: 700;
-  }
-  
-  .home-profile-tagline {
-    font-size: 1.3rem !important;
-    color: #6f6f6f;
-  }
-  
-  /* Section titles */
-  h1, h2, h3 {
-    font-weight: 700 !important;
-  }
-  
-  /* Certifications grid */
+  font-family: 'Inter', sans-serif !important;
+  letter-spacing: -0.01em;
+}
+
+/* --- HERO PROFILE SECTION --- */
+.home-profile-image {
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 20px var(--primary-glow); /* Glowing Avatar */
+  transition: transform 0.3s ease;
+}
+
+.home-profile-image:hover {
+  transform: scale(1.05);
+}
+
+.home-profile-name {
+  font-weight: 800 !important;
+  background: linear-gradient(to right, #ffffff, #a5b4fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.2rem !important;
+}
+
+/* --- TECH STACK BADGES --- */
+.tech-stack-container {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+/* --- CERTIFICATION CARDS --- */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.cert-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.cert-card:before {
+  content: "🏆";
+  margin-right: 10px;
+  font-size: 1.1rem;
+}
+
+.cert-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-3px);
+  border-color: #3b82f6;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* --- WORK HIGHLIGHT BOXES --- */
+.highlight-box {
+  background: linear-gradient(145deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%);
+  border-left: 3px solid #3b82f6; /* Accent Bar */
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 0 8px 8px 0;
+}
+
+.highlight-box h4 {
+  margin: 0 0 5px 0 !important;
+  font-size: 1.1rem;
+  color: #e2e8f0;
+}
+
+.highlight-box p {
+  margin: 0 !important;
+  font-size: 0.95rem;
+  color: #94a3b8;
+}
+
+/* --- MOBILE OPTIMIZATION --- */
+@media (max-width: 600px) {
   .cert-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 12px;
-    background: rgba(0,0,0,0.03);
-    padding: 20px;
-    border-radius: 12px;
+    grid-template-columns: 1fr;
   }
-  
-  /* Buttons */
-  .button {
-    border-radius: 8px;
-  }
-  
-  /* Footer cleanup */
-  .footer {
-    opacity: 0.8;
-  }
-  
+}
