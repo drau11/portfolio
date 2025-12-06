@@ -1,0 +1,138 @@
+baseURL: "https://ranadevesh.au/"
+languageCode: "en-au"
+title: "Devesh Rana"
+theme: "blowfish"
+
+enableRobotsTXT: true
+
+build:
+  writeStats: true
+
+# ------- TOP NAVIGATION -------
+menu:
+  main:
+    - identifier: about
+      name: "About"
+      url: "/about/"
+      weight: 10
+
+    - identifier: experience
+      name: "Experience"
+      url: "/experience/"
+      weight: 20
+
+    - identifier: certifications
+      name: "Certifications"
+      url: "/certifications/"
+      weight: 30
+
+    - identifier: projects
+      name: "Projects"
+      url: "/projects/"
+      weight: 40
+
+    - identifier: resume
+      name: "Resume"
+      url: "/resume.pdf"
+      weight: 50
+
+
+# ------- SITE PARAMETERS -------
+params:
+  colorScheme: "blowfish"
+  defaultBackgroundImage: "background.svg"
+  enableSearch: true
+  enableCodeCopy: true
+  enableBreadcrumbs: true
+
+  customCSS:
+    - "css/custom.css"
+
+
+  # -------- HOME HERO SECTION --------
+  home:
+    profile:
+      enable: true
+      name: "Devesh Rana"
+      tagline: "Cyber Security Engineer | Sydney, Australia"
+      image: "me.jpg"
+      imageWidth: 220
+      imageHeight: 220
+      imageCircle: true
+      typeit: true
+      headline: "Cloud · Application · Runtime · Data Security"
+      description: "Security Engineer specialising in Cloud Security, Application Security, Vulnerability Management, ASM, and Automation."
+      buttons:
+        - title: "Resume"
+          url: "/resume.pdf"
+          icon: "file"
+          weight: 10
+        - title: "LinkedIn"
+          url: "https://au.linkedin.com/in/devesh-rana11"
+          icon: "linkedin"
+          weight: 20
+        - title: "GitHub"
+          url: "https://github.com/drau11"
+          icon: "github"
+          weight: 30
+
+
+  # -------- HOMEPAGE SECTIONS --------
+  widgets:
+    homepage:
+
+      - type: "custom"
+        title: "About Me"
+        content: |
+          I'm a Cyber Security Engineer at Domain, passionate about securing cloud-native environments, uplifting engineering teams,
+          and embedding security deeply into the SDLC. I specialise in vulnerability management (CVM), cloud security, runtime security,
+          application security, data classification, and external attack surface management.
+
+      - type: "custom"
+        title: "Certifications"
+        content: |
+          <div class="cert-grid">
+            <div><img src="/logos/aws-security.png" class="cert-logo"> AWS Certified Security – Specialty</div>
+            <div><img src="/logos/aws-saa.png" class="cert-logo"> AWS Solutions Architect – Associate</div>
+            <div><img src="/logos/akamai.png" class="cert-logo"> Akamai Web Application & API Protection</div>
+            <div><img src="/logos/wiz.png" class="cert-logo"> Wiz Certified Cloud Fundamentals</div>
+            <div><img src="/logos/azure.png" class="cert-logo"> Azure Fundamentals</div>
+            <div><img src="/logos/comptia.png" class="cert-logo"> CompTIA Security+</div>
+            <div><img src="/logos/isc2.png" class="cert-logo"> ISC2 Certified in Cybersecurity (CC)</div>
+          </div>
+
+      - type: "custom"
+        title: "Technical Skills"
+        content: |
+          <div class="badge-flex">
+            <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black">
+            <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white">
+            <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white">
+            <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white">
+            <img src="https://img.shields.io/badge/Wiz-6420AA?style=for-the-badge&logo=wiz&logoColor=white">
+            <img src="https://img.shields.io/badge/Acunetix-EF2D56?style=for-the-badge&logo=acunetix&logoColor=white">
+            <img src="https://img.shields.io/badge/AssetNote-0D1117?style=for-the-badge&logoColor=white">
+          </div>
+
+      - type: "custom"
+        title: "Highlighted Work"
+        content: |
+          **● Vulnerability Reduction & CVM Optimization**  
+          Delivered ~67% reduction in Critical Wiz vulnerabilities and integrated AssetNote & Acunetix into CVM.
+
+          **● Data Security Uplift (DSPM)**  
+          Completed full data controls review, validated high-risk findings, and created structured DSPM tracker.
+
+          **● DAST Uplift & Acunetix Rollout**  
+          Onboarded all staging targets, deployed internal scanning agent, and linked DAST into CVM workflows.
+
+          **● External Attack Surface Management**  
+          Achieved 100% coverage across AssetNote & CoStar and improved asset grouping accuracy.
+
+          **● Secure Build & Runtime**  
+          Drove multi-stage container adoption and onboarded 29/31 EKS clusters into runtime security.
+
+footer:
+  showScrollToTop: true
+  showTheme: false
+  showCopyright: false

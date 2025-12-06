@@ -1,0 +1,65 @@
+/* ===== GLOBAL BACKGROUND ===== */
+body {
+    background: radial-gradient(circle at top right, #0a0f24, #000000);
+  }
+  
+  
+  /* ===== HERO SECTION ===== */
+  .hero-profile img {
+    border: 3px solid #38bdf8 !important;
+    border-radius: 50%;
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.5);
+  }
+  
+  .hero-title,
+  .hero-tagline {
+    color: #fff !important;
+    text-shadow: 0 0 12px rgba(0, 150, 255, 0.55);
+  }
+  
+  
+  /* ===== BUTTONS ===== */
+  .button {
+    padding: 10px 20px !important;
+    border-radius: 8px !important;
+  }
+  
+  .button-primary {
+    background: #0ea5e9 !important;
+    border: none !important;
+  }
+  
+  .button-primary:hover {
+    background: #38bdf8 !important;
+  }
+  
+  
+  /* ===== CERTIFICATIONS GRID ===== */
+  .cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 12px;
+    margin-top: 15px;
+  }
+  
+  .cert-logo {
+    width: 28px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  
+  /* ===== SKILL BADGES ===== */
+  .badge-flex {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  
+  /* ===== PAGE WIDTH ===== */
+  .container {
+    max-width: 900px !important;
+  }
+  
