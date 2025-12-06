@@ -1,3 +1,6 @@
 ---
-layout: "home"
+title: ""
+outputs: ["HTML"]
+aliases: ["/"]
 ---
+
